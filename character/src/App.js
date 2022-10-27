@@ -4,12 +4,13 @@ import data from "./assets/data.json";
 
 function App() {
   const characterMap = data.map(index => {
-    return <CharacterCard
+    return <li key={index.id}><CharacterCard
       name={index.name}
       status={index.status}
       species={index.species}
       image={index.image}
-      />;
+      location={index.location.name}
+      /></li>;
   });
 
   return (

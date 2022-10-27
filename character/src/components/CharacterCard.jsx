@@ -18,11 +18,11 @@ const CharacterCard = (props) => (
       </div>
       <div className="section">
         <span className="text-gray">Last known location:</span>
-        <a href="https://rickandmortyapi.com/api/location/1">Earth</a>
+        <a href="/">unknown</a>
       </div>
       <div className="section">
         <span className="text-gray">First seen in:</span>
-        <a href="https://rickandmortyapi.com/api/location/20">Earth</a>
+        <a href="/">{props.location}</a>
       </div>
     </div>
   </article>
